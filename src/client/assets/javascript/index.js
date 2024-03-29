@@ -164,9 +164,10 @@ function handleSelectTrack(target) {
 	
 }
 
-function handleAccelerate() {
+async function handleAccelerate() {
 	console.log("accelerate button clicked")
-	// TODO - Invoke the API call to accelerate
+	// TODO - Invoke the API call to accelerate\
+	await accelerate(store.race_id)
 }
 
 // HTML VIEWS ------------------------------------------------
